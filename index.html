@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinecolombia Confiteria</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.png">
+    <script src="script.js"></script>
+</head>
+<body background="images/fondo.jpg">
+    
+    <div class="boxed">
+        <center>
+        <table>
+      
+            <tr>
+              <td><b><p>Crispeta Mediana</td>
+              <td><center>
+                <img src="images/crispeta.png" style="height: 50px"></center>
+              </td>
+              <td><b><p>
+                <input style="border-radius: 4px;" id="restarmediana" type="button"  value="-" onClick="restar('mediana');">
+              <span id="mediana"> 0 </span>
+              <input style="border-radius: 4px;" id="sumarmediana" type="button" value= "+" onClick="sumar('mediana');">
+              </td>
+              <td><b><p>&nbsp;&nbsp;17500</td>
+            </tr>
+      
+            <tr>
+              <td><b><p>Crispeta Grande</td>
+              <td><center>
+                <img src="images/crispeta.png" style="height: 50px"></center>
+              </td>
+              <td><b><p>
+                <input style="border-radius: 4px;" id="restargrande" type="button"  value="-" onClick="restar('grande');">
+                <span id="grande"> 0 </span>
+                <input style="border-radius: 4px;" id="sumargrande" type="button" value= "+" onClick="sumar('grande');">
+              </td>
+              <td><b><p>&nbsp;&nbsp;19500</td>
+            </tr>
+      
+            <tr>
+              <td><b><p>Agua</td>
+              <td><center>
+                <img src="images/agua.png" style="height: 50px"></center>
+              </td>
+              <td><b><p>
+                <input style="border-radius: 4px;" id="restaragua" type="button"  value="-" onClick="restar('agua');">
+                <span id="agua"> 0 </span>
+                <input style="border-radius: 4px;" id="sumaragua" type="button" value= "+" onClick="sumar('agua');">
+              </td>
+              <td><b><p>&nbsp;&nbsp;5400</td>
+            </tr>
+      
+            <tr>
+              <td><b><p>Perro</td>
+              <td><center>
+                <img src="images/perro.png" style="height: 50px"></center>
+              </td>
+              <td><b><p>
+                <input style="border-radius: 4px;" id="restarperro" type="button"  value="-" onClick="restar('perro');">
+                <span id="perro"> 0 </span>
+                <input style="border-radius: 4px;" id="sumarperro" type="button" value= "+" onClick="sumar('perro');">
+              </td>
+              <td><b><p>&nbsp;&nbsp;13900</td>
+            </tr>
+      
+            <tr>
+              <td><b><p>Nachos</td>
+              <td><center>
+                <img src="images/nachos.png" style="height: 50px"></center>
+              </td>
+              <td><b><p>
+                <input style="border-radius: 4px;" id="restarnachos" type="button"  value="-" onClick="restar('nachos');">
+                <span id="nachos"> 0 </span>
+                <input style="border-radius: 4px;" id="sumarnachos" type="button" value= "+" onClick="sumar('nachos');">
+              </td>
+              <td><b><p>&nbsp;&nbsp;12500</td>
+            </tr>
+      
+            <tr>
+              <td><b><p>Gaseosa Pequeña</td>
+              <td><center>
+                <img src="images/gaseosa.png" style="height: 50px"></center>
+              </td>
+              <td><b><p>
+                <input style="border-radius: 4px;" id="restargaseosaP" type="button"  value="-" onClick="restar('gaseosaP');">
+                <span id="gaseosaP"> 0 </span>
+                <input style="border-radius: 4px;" id="sumargaseosaP" type="button" value= "+" onClick="sumar('gaseosaP');">
+              </td>
+              <td><b><p>&nbsp;&nbsp;7300</td>
+            </tr>
+      
+            <tr>
+              <td><b><p>Gaseosa Mediana</td>
+              <td><center>
+                <img src="images/gaseosa.png" style="height: 50px"></center>
+              </td>
+              <td><b><p>
+                <input style="border-radius: 4px;" id="restargaseosaM" type="button"  value="-" onClick="restar('gaseosaM');">
+                <span id="gaseosaM"> 0 </span>
+                <input style="border-radius: 4px;" id="sumargaseosaM" type="button" value= "+" onClick="sumar('gaseosaM');">
+              </td>
+              <td><b><p>&nbsp;&nbsp;9600</td>
+            </tr>
+      
+        </table>
+        <button style="border-radius: 4px;" onclick="calcular()">Calcular</button>
+        </center>
+    </div>
+    <br>
+    <span id="pedido" hidden="hidden">
+    <div class = "boxed">
+        <p id="productos"></p></th>
+    </div>
+
+    </span>
+</body>
+</html>
